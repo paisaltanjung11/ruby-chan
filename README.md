@@ -1,8 +1,8 @@
 # Ruby-chan
 
-**Ruby-chan** is a Chrome Extension that adds *furigana* and English definitions to selected Japanese text on any website, designed to support Japanese learners in reading kanji-rich content.
+**Ruby-chan** is a Chrome Extension that adds _furigana_ and English definitions to selected Japanese text on any website, designed to support Japanese learners in reading kanji-rich content.
 
-![Ruby-chan banner](img/ruby-github-banner.png) 
+![Ruby-chan banner](img/ruby-github-banner.png)
 
 ---
 
@@ -18,13 +18,13 @@
 
 ## Screenshots
 
-| Screenshot | Description |
-|-----------|-------------|
-| ![Image 1](screenshots/ruby-highlight.png) | Highlight Japanese text and see real-time furigana and english definitions |
-| ![Image 2](screenshots/ruby-meaning.png) | Popup UI showing reading and meaning for kanji words. |
-| ![Image 3](screenshots/ruby-sound.png) | Play pronunciation with a single click to hear how the word is read. |
+| Screenshot                                 | Description                                                                |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| ![Image 1](screenshots/ruby-highlight.png) | Highlight Japanese text and see real-time furigana and English definitions |
+| ![Image 2](screenshots/ruby-meaning.png)   | Popup UI showing reading and meaning for kanji words.                      |
+| ![Image 3](screenshots/ruby-sound.png)     | Click to hear how each kanji word is pronounced.                           |
 
-> 📌 *Screenshots can be found in the `/screenshots/` folder*
+> 📌 _Screenshots can be found in the `/screenshots/` folder_
 
 ---
 
@@ -53,4 +53,16 @@ Since Ruby-chan is not yet published to the Chrome Web Store, you can run it loc
 
 ## Background
 
-I created Ruby-chan out of personal need as a Japanese learner, I struggled with reading native content online due to lack of furigana or translations. This extension bridges that gap by offering in-place reading assistance without leaving the page.
+I created Ruby-chan from personal need. As a Japanese learner, I often struggled with reading native content online due to lack of furigana or translations. This extension bridges that gap by offering in-place reading assistance without leaving the page.
+
+---
+
+## Changelog
+
+Track updates and new features in the [CHANGELOG.md](CHANGELOG.md).
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

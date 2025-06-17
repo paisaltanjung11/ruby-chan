@@ -10,7 +10,7 @@
   },
   "action": {
     "default_icon": "img/rubychan_icon.png",
-    "default_title": "Add furigana and English definitions to selected Japanese text",
+    "default_title": "Add furigana and English definitions to selected Japanese text / 選択した日本語にふりがなと英語訳を追加",
     "default_popup": "popup.html"
   },
   "background": {
@@ -27,7 +27,7 @@
   ],
   "permissions": ["storage"],
   "host_permissions": ["https://jisho.org/*"],
-  "homepage_url": "https://github.com/paisaltanjung11",
+  "homepage_url": "https://github.com/paisaltanjung11/ruby-chan",
   "omnibox": {
     "keyword": "ruby"
   },
