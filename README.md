@@ -20,9 +20,9 @@
 
 | Screenshot | Description |
 |-----------|-------------|
-| ![Gambar 1](screenshots/highlight.png) | **Gambar 1**: Highlight Japanese text and see real-time furigana and definitions |
-| ![Gambar 2](screenshots/popup.png) | **Gambar 2**: Popup UI showing reading and meaning |
-| ![Gambar 3](screenshots/settings.png) | **Gambar 3**: Extension button and settings state |
+| ![Image 1](screenshots/ruby-highlight.png) | Highlight Japanese text and see real-time furigana and english definitions |
+| ![Image 2](screenshots/ruby-meaning.png) | Popup UI showing reading and meaning for kanji words. |
+| ![Image 3](screenshots/ruby-sound.png) | Play pronunciation with a single click to hear how the word is read. |
 
 > 📌 *Screenshots can be found in the `/screenshots/` folder*
 
@@ -53,4 +53,4 @@ Since Ruby-chan is not yet published to the Chrome Web Store, you can run it loc
 
 ## Background
 
-I created Ruby-chan out of personal need — as a Japanese learner, I struggled with reading native content online due to lack of furigana or translations. This extension bridges that gap by offering in-place reading assistance without leaving the page.
+I created Ruby-chan out of personal need as a Japanese learner, I struggled with reading native content online due to lack of furigana or translations. This extension bridges that gap by offering in-place reading assistance without leaving the page.
