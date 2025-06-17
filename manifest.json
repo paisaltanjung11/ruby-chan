@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Ruby-chan",
+  "version": "1.0.0",
+  "description": "Lost in kanji? Let Ruby-chan help! Highlight Japanese text and instantly see furigana and English meanings.",
+  "icons": {
+    "16": "img/rubychan_icon.png",
+    "48": "img/rubychan_icon.png",
+    "128": "img/rubychan_icon.png"
+  },
+  "action": {
+    "default_icon": "img/rubychan_icon.png",
+    "default_title": "Add furigana and English definitions to selected Japanese text",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "css": ["css/style.css"],
+      "js": ["js/rubybundle.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["storage"],
+  "host_permissions": ["https://jisho.org/*"],
+  "homepage_url": "https://github.com/paisaltanjung11",
+  "omnibox": {
+    "keyword": "ruby"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["img/rubychan_icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

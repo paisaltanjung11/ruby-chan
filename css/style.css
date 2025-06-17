@@ -1,0 +1,313 @@
+.rubychan-popup {
+  position: absolute;
+  z-index: 999999999;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: content-box;
+  font-family: "Noto Sans JP", sans-serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  min-width: 260px;
+  min-height: 40px;
+  background: rgba(33, 33, 33, 0.97);
+  color: #eee;
+  animation: fadeIn 180ms ease-out;
+  user-select: text;
+  pointer-events: auto;
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE/Edge */
+}
+
+.rubychan-popup * {
+  user-select: text;
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE/Edge */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rubychan-popup > .rubychan-content {
+  padding: 8px;
+  text-align: left;
+  word-break: break-all;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: content-box;
+  line-height: 1.8;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  user-select: text;
+  cursor: text;
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE/Edge */
+}
+
+.rubychan-popup > .rubychan-content > ruby {
+  padding: 0px;
+  border: 0px;
+  font-weight: 500;
+  margin-right: 4px;
+  cursor: text;
+}
+
+.rubychan-popup > .rubychan-content > ruby > rt {
+  white-space: nowrap;
+  opacity: 0.9;
+  transform: translateY(-2px);
+  font-size: 0.65em !important;
+  color: #ff6666;
+  letter-spacing: 0.02em;
+  cursor: text;
+}
+
+/* New styles for definitions */
+.rubychan-definitions-container {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: rgba(22, 22, 22, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  user-select: text;
+  cursor: text;
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE/Edge */
+}
+
+.rubychan-definitions {
+  width: 100%;
+}
+
+.rubychan-definition-item {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.rubychan-definition-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.rubychan-word {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.rubychan-reading {
+  color: #88b8ff;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.rubychan-meaning {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+.rubychan-audio-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #88b8ff;
+  transition: transform 0.2s, color 0.2s;
+  opacity: 0.85;
+  border-radius: 50%;
+}
+
+.rubychan-audio-button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  background: rgba(136, 184, 255, 0.15);
+}
+
+.rubychan-audio-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.rubychan-audio-playing {
+  color: #ff6666;
+  animation: pulse-audio 1s infinite alternate;
+}
+
+@keyframes pulse-audio {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rubychan-loading {
+  font-size: 14px;
+  color: #88b8ff;
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Scrollbar styling */
+.rubychan-definitions-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.rubychan-definitions-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.rubychan-definitions-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.rubychan-definitions-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Vocabulary list page styles */
+.rubychan-vocab-container {
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.rubychan-vocab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.rubychan-vocab-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #88b8ff;
+}
+
+.rubychan-vocab-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.rubychan-vocab-controls button {
+  background-color: #375a97;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.rubychan-vocab-controls button:hover {
+  background-color: #4c78c0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.rubychan-vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #2a2a2a;
+}
+
+.rubychan-vocab-table th {
+  text-align: left;
+  padding: 14px 16px;
+  background-color: #333333;
+  border-bottom: 2px solid #444444;
+  color: #dddddd;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rubychan-vocab-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #3a3a3a;
+  color: #eeeeee;
+}
+
+.rubychan-vocab-action {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.rubychan-vocab-action button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.rubychan-vocab-delete {
+  background-color: #b83a3a;
+  color: white;
+  opacity: 0.9;
+}
+
+.rubychan-vocab-delete:hover {
+  opacity: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.rubychan-vocab-speak {
+  background-color: #375a97;
+  color: white;
+  opacity: 0.9;
+}
+
+.rubychan-vocab-speak:hover {
+  opacity: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
