@@ -2,7 +2,7 @@
 
 **Ruby-chan** is a Chrome Extension that adds *furigana* and English definitions to selected Japanese text on any website — designed to support Japanese learners in reading kanji-rich content.
 
-![Ruby-chan banner](img/rubychan_banner.png) <!-- Optional header image -->
+![Ruby-chan banner](img/rubychan_banner.png) 
 
 ---
 
